@@ -44,7 +44,7 @@ enter the number :7
 
 -------------------------------------------------------------------------------------
 
-// even number upto aq range 
+// even number upto a range 
 #include<stdio.h>
 int main()
 {
