@@ -167,7 +167,6 @@ int main() {
        if(num % i==0)
        {
            sum=sum+i;
-           
        }
    }
    
