@@ -65,4 +65,37 @@ int main()
 sample input : 5
 sample output: 6
 
+-------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+int main() {
+    int sq,sq2,rec,x,l,b,rec2;
+    printf("enter the x value for square:");
+    scanf("%d",&x);
+    printf("enter the length for rectangle :");
+    scanf("%d",&l);
+    printf("enter the breadth for rectangle:");
+    scanf("%d",&b);
+    sq=x*x;
+    sq2=4*x;
+    rec=l*b;
+    rec2=2*(l+b);
+    printf("area of square is %d \nperimeter of square is %d\n",sq,sq2);
+    printf("\narea of rectangle is %d \nperimeter of rectangle is %d",rec,rec2);
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------
+sample input : 5,10,4
+sample output : 
+enter the x value for square:5
+enter the length for rectangle :10
+enter the breadth for rectangle:4
+area of square is 25 
+perimeter of square is 20
+
+area of rectangle is 40 
+perimeter of rectangle is 28
+
+-----------------------------------------------------------------------------------------------
 
