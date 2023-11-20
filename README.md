@@ -66,7 +66,7 @@ sample input : 5
 sample output: 6
 
 -------------------------------------------------------------------------------------------
-
+//area and perimeter of square and rectangle
 #include <stdio.h>
 int main() {
     int sq,sq2,rec,x,l,b,rec2;
