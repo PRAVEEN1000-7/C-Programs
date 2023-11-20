@@ -124,3 +124,68 @@ sample input : 77 46 67
 sample output :
 enter the x,y,z value :77 46 67
 77 is greater than 46 and 67
+
+--------------------------------------------------------------------------------------------------
+// average of odd number below a range 
+#include <stdio.h>
+int main() {
+   int sum=0,x=0,num;
+   
+   printf("enter the range :");
+   scanf("%d",&num);
+   
+   for(int i=0;i<=num;i++)
+       {
+           if(i%2==1)
+          {
+           sum=sum+i;
+           x++;
+         }
+        }
+   float aver= sum / x;
+   
+   printf("average of odd number for given number %d is %.2f",num,aver);
+   return 0;
+}
+
+--------------------------------------------------------------------------------------------------
+sample input : 9
+sample output :
+enter the range :9
+average of odd number for given number 9 is 5.00
+
+----------------------------------------------------------------------------------------------------
+// perfect number 
+#include <stdio.h>
+int main() {
+   int sum=0,num;
+   
+   printf("enter a number :");
+   scanf("%d",&num);
+   for(int i=1;i<num;i++)
+   {
+       if(num % i==0)
+       {
+           sum=sum+i;
+           
+       }
+   }
+   
+   if(sum == num)
+   {
+       printf("given number %d is a perfect number",num);
+   }
+   else
+   {
+       printf("given number %d is not a perfect number",num);
+   }
+   return 0;
+}
+
+----------------------------------------------------------------------------------------
+sample input : 6
+sample output : 
+enter a number :6
+given number 6 is a perfect number
+
+---------------------------------------------------------------------------------------
