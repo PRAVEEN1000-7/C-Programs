@@ -98,4 +98,29 @@ area of rectangle is 40
 perimeter of rectangle is 28
 
 -----------------------------------------------------------------------------------------------
+// to find out biggest number of three numbers
+#include <stdio.h>
+int main() {
+    int x,y,z;
+    printf("enter the x,y,z value :");
+    scanf("%d %d %d",&x,&y,&z);
+    if(x>y && x>z)
+    {
+        printf("%d is greater than %d and %d",x,y,z);
+    }
+    else if(y>x && y>z)
+    {
+        printf("%d is greater than %d and %d",y,x,z);
+    }
+    else
+    {
+        printf("%d is greater than %d and %d",z,x,y);
+    }
+    return 0;
+}
 
+----------------------------------------------------------------------------------------------------
+sample input : 77 46 67
+sample output :
+enter the x,y,z value :77 46 67
+77 is greater than 46 and 67
