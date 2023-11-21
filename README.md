@@ -249,4 +249,27 @@ enter the 3 subject marks :97 90 99
 grade A
 
 ---------------------------------------------------------------------------
+// Vowels or not
+#include <stdio.h>
+
+int main() {
+    char x;
+    printf("enter the letter :");
+    scanf("%c",&x);
+    if(x=='a'||x=='i'||x=='o'||x=='e'||x=='u'||x=='A'||x=='I'||x=='O'||x=='E'||x=='U')
+    {
+        printf(" %c is a vowel.",x);
+    }
+    else
+    {
+         printf(" %c is not a vowel.",x);
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------
+sample input : A
+sample output : A is a vowel.
+
+-----------------------------------------------------------------------------
 
