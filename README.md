@@ -299,3 +299,26 @@ y :66
 
 -----------------------------------------------------------------------------
 
+// sum of digits of a number
+#include <stdio.h>
+int main () 
+{
+  int n,digit,sum=0;
+  printf ("Enter number to findout sum of its digits: ");
+  scanf("%d",&n);
+  while(n!=0)
+  {
+       sum+=n%10;
+     n=n/10;
+  }
+  printf ("the sum of digits of given number is %d",sum);
+  return 0;
+}
+
+-------------------------------------------------------------------------------
+sample input : 123456789
+sample output :
+Enter number to findout sum of its digits: 123456789
+the sum of digits of given number is 45
+
+----------------------------------------------------------------------------
