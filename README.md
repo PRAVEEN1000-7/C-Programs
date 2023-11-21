@@ -188,3 +188,25 @@ enter a number :6
 given number 6 is a perfect number
 
 ---------------------------------------------------------------------------------------
+//  Net salary of an employee 
+#include <stdio.h>
+
+int main() {
+    float net_sal,gro_sal,pro_tax,ppf,in_tax;
+    printf(" enter the gross salary and professional tax :");
+    scanf("%f %f",&gro_sal,&pro_tax);
+    printf(" enter the public provident fund and income tax :");
+    scanf("%f %f",&ppf,&in_tax);
+    net_sal = gro_sal - pro_tax - ppf - in_tax;
+    printf(" Net salary of an employee is : %.2f",net_sal);
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------
+sample input :300000 12000 , 10000 21000
+sample out  :
+enter the gross salary and professional tax :300000 12000
+enter the public provident fund and income tax :10000 21000
+Net salary of an employee is : 257000.00
+
+---------------------------------------------------------------------------------------
