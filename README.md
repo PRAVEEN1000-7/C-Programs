@@ -210,3 +210,43 @@ enter the public provident fund and income tax :10000 21000
 Net salary of an employee is : 257000.00
 
 ---------------------------------------------------------------------------------------
+// result of a student 
+#include <stdio.h>
+
+int main() {
+    int mark[5],per,a,b,c;
+   
+    printf("enter the 3 subject marks :");
+    scanf("%d",&a,&b,&c);
+
+    per=a+b+c/300*100;
+    if(per>90)
+    {
+        printf(" grade A");
+    }
+    else if(per>75)
+    {
+        printf(" grade B");
+    }
+    else if(per>50)
+    {
+        printf(" grade C");
+    }
+    else if(per>35)
+    {
+        printf(" grade E");
+    }
+    else{
+        printf(" grade F");
+    }
+    return 0;
+}
+
+----------------------------------------------------------------------------
+sample input  : 97 90 99
+sample output :
+enter the 3 subject marks :97 90 99
+grade A
+
+---------------------------------------------------------------------------
+
