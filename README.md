@@ -272,4 +272,30 @@ sample input : A
 sample output : A is a vowel.
 
 -----------------------------------------------------------------------------
+// swapping of integers
+#include <stdio.h>
+
+int main() {
+    int x,y,z;
+    printf("enter the x value :");
+    scanf("%d",&x);
+    printf("enter the y value :");
+    scanf("%d",&y);
+    z=x;
+    x=y;
+    y=z;
+    printf("x :%d\n",x);
+    printf("y :%d",y);
+    return 0;
+}
+
+----------------------------------------------------------------------------
+sample input : 66 77
+sample output : 
+enter the x value :66
+enter the y value :77
+x :77
+y :66
+
+-----------------------------------------------------------------------------
 
