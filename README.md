@@ -346,3 +346,31 @@ Enter the radius : 7
 Area of circle is 153.86
 
 -----------------------------------------------------------------------------
+
+//perimeter of circle by user-defined function & call by reference
+
+#include<stdio.h>
+float peri(float *x)// formal parameter
+{
+   *x=2*3.14**x;
+     printf("Perimeter of circle is %.2f\n",*x);
+    
+}
+int main()
+{
+    float rad;
+    printf("Enter the radius : ");
+    scanf("%f",&rad);
+    peri(&rad);//actual parameter
+    printf("after perimeter : %.2f ",rad);
+    return 0;
+}
+
+-------------------------------------------------------------------------------
+
+sample input and output :
+Enter the radius : 7
+Perimeter of circle is 43.96
+after perimeter : 43.96 
+
+---------------------------------------------------------------------------------
