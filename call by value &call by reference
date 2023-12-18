@@ -50,3 +50,29 @@ Perimeter of circle is 43.96
 after perimeter : 43.96 
 
 ---------------------------------------------------------------------------------
+
+/*to find hypontenuse side of a triangle by user-defined function with pre-defined function  & call by value */
+#include<stdio.h>
+#include<math.h>
+float pythagorean(float x,float y)// formal parameter
+{
+  float z = x*x + y*y ;
+  float r=sqrt(z);
+  return r;
+}
+int main()
+{
+    float s1,s2;
+    printf("Enter the length of two sides of a triangle : ");
+    scanf("%f %f",&s1,&s2);
+    printf("the length of hypotenuse side of a triangle is : %.2f\n",pythagorean(s1,s2));//actual parameter
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+sample input & output :
+Enter the length of two sides of a triangle : 3 4
+the length of hypotenuse side of a triangle is : 5.00
+
+------------------------------------------------------------------------------------------
