@@ -322,3 +322,27 @@ Enter number to findout sum of its digits: 123456789
 the sum of digits of given number is 45
 
 ----------------------------------------------------------------------------
+//area of circle by user-defined function & call by value
+
+#include<stdio.h>
+float area(float x)// formal parameter
+{
+    float ar=3.14*x*x;
+    return ar;
+    
+}
+int main()
+{
+    float rad;
+    printf("Enter the radius : ");
+    scanf("%f",&rad);
+    printf("Area of circle is %.2f\n",area(rad));//actual parameter
+    return 0;
+}
+
+----------------------------------------------------------------------------
+sample input and output :
+Enter the radius : 7
+Area of circle is 153.86
+
+-----------------------------------------------------------------------------
